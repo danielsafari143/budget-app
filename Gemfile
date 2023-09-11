@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.2'
+ruby '2.7.8'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.7'
@@ -60,7 +60,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'rspec-rails'
 
-  gem 'devise'
+  # gem 'devise'
 
   # # Capybara, the library that allows us to interact with the browser using Ruby
   # gem 'capybara'
@@ -87,3 +87,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
+gem "devise", "~> 4.9"
