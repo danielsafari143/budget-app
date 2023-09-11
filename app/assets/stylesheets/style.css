@@ -123,6 +123,7 @@ ul {
 }
 
 .sub-item {
+    color: #434b54;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -130,11 +131,18 @@ ul {
 }
 
 .price {
+    color: #434b54;
     align-self: flex-start;
 }
 
 .sub-item-text{
+    color: #434b54;
     margin-bottom: 10px;
+}
+
+.sub-item-text a{
+    color: #434b54;
+    text-decoration: none;
 }
 
 .btn-tra {
@@ -151,4 +159,8 @@ ul {
     color: white;
     padding: 15px 40px 15px 40px;
     border: 1px solid white;
+}
+
+.main-list {
+    margin-bottom: 60px;
 }
