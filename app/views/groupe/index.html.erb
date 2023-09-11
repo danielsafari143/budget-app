@@ -1,1 +1,19 @@
-<h1>Welcom</h1>
+<div>
+    <div>
+        <ul>
+            <% @groupe.each  do |category| %>
+                <li class="list-item">
+                    <img src=<%=category.icon%> class="images"  alt="Girl in a jacket" width="80" height="80">
+                    <div  class="sub-item">
+                        <div>
+                            <p class="sub-item-text"><%= category.name %></p>
+                            <p class="sub-item-text"><%= category.created_at %></p>
+                        </div>
+                        <p class="price">$34.00</p>
+                    </div>
+                </li>
+            <%end%>
+        <ul>
+    </div>
+    <button class="btn-tra "><%= link_to "Create Category" , new_groupe_path %></button>
+</div>
