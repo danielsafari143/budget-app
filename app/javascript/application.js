@@ -4,13 +4,21 @@ import "controllers"
 
 document.addEventListener("turbo:load", (event) => {
     try {
-        let button = document.getElementById('backe')
+        let button = document.getElementById('backward')
 
         button.addEventListener('click' , () => {
-            console.log("Salut")
-        window.history.back()
-
+         location.href = location.origin.concat("/groupe")
     })
+    } catch (error) {
+        console.log()
+    }
+
+    try {
+        let secondButton = document.getElementById('backe')
+
+        secondButton.addEventListener('click' , () => {
+            window.history.back()
+       })
     } catch (error) {
         console.log()
     }
