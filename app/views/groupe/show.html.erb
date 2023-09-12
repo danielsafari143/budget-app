@@ -1,0 +1,33 @@
+<div>
+    <div class="log-nav">
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" id="backe" height="16" fill="currentColor" class="bi bi-arrow-left arrow" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+    </svg>
+
+    <p class="cate" >TRANSATIONS</p>
+
+    <p></p>
+  </div>
+
+    <div class="main-list show">
+         <ul>
+            <div class="top-header-groupe">
+                 <img src=<%=@groupe.icon%> class="images"  alt="Girl in a jacket" width="80" height="80">
+                 <p><%= @groupe.name %></p>
+            </div>
+
+            <div class="top-header">
+                <p>TOTAL PAYMENT</p>
+                <p class="price">$<%= @entity.sum(:amount) %></p>
+            </div>
+            <% @entity.each  do |entity| %>
+                <li class="list-item itm" >
+                    <p>Transaction N°<%= entity.id %></p>
+                    <p><%= entity.name %></p>
+                    <p class="date-show"><%= entity.created_at %></p>
+                </li>
+            <%end%>
+         </ul>
+    </div>
+    <button class="btn-tra "><%= link_to "Add Transaction" , "/groupe/#{@groupe.id}/entity/new" %></button>
+</div>
