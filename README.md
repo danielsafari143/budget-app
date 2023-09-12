@@ -50,6 +50,16 @@ This small budget project is about building a mobile web application where you c
 
 To get started with this app, you will need to have Ruby and Rails installed on your computer. Once you have Ruby and Rails installed.
 
+## Live version
+```sh
+    https://budget-1ccr.onrender.com/
+```
+
+## Video
+```sh
+   https://www.loom.com/share/c95e277b5bfc45ada9dd3ee4e891f441?sid=2d7cdd8f-fd81-43b9-9ed8-abc0b9154264
+```
+
 ### Prerequisites
 
 In order to run this project you need:
